@@ -10,7 +10,7 @@ A web application for motorcycle riders and road vehicles travelling in a group.
 - Ride history with route replay
 
 ## Tech Stack
-HTML, CSS, JavaScript, Leaflet.js, Node.js, Express.js, Socket.IO, PostgreSQL, OpenStreetMap, Browser Geolocation API
+React.js, Leaflet.js, Node.js, Express.js, Socket.IO, PostgreSQL, OpenStreetMap, Browser Geolocation API
 
 ## Status
 Work in progress. BCA final-year project.
