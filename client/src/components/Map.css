@@ -1,0 +1,94 @@
+/* Map Component Styling */
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Custom Marker Styling */
+.custom-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -100%);
+  cursor: pointer;
+}
+
+.marker-label {
+  background: rgba(15, 23, 42, 0.85);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-bottom: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.marker-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.marker-bike {
+  background-color: #2563eb; /* Primary blue for bike */
+}
+
+.marker-car {
+  background-color: #0d9488; /* Teal for car */
+}
+
+.marker-passenger {
+  background-color: #8b5cf6; /* Purple for passenger */
+}
+
+.marker-icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.marker-stale .marker-icon-wrapper {
+  opacity: 0.6;
+  filter: grayscale(80%);
+}
+
+.marker-self .marker-icon-wrapper {
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.35);
+}
+
+/* Map Overlay Controls */
+.map-recenter-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  z-index: 1000;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 10px 16px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
